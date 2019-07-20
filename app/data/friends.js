@@ -29,6 +29,3 @@ var friendArray = [
 
 module.exports = friendArray;
 
-var scoreArray = [];
-
-module.exports = scoreArray;

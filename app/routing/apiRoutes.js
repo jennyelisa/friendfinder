@@ -1,21 +1,16 @@
-var surveyData = require("../data/friends");
-// var waitListData = require("../data/waitinglistData");
 
 module.exports = function(app) {
 
+var surveyData = require("../data/friends");
     app.get('/api/friends', function(req, res) {
         res.json(surveyData);
     });
 
 
     app.post('/api/friends', function(req, res) {
-        if(surveyData.length < 5) {
             surveyData.push(req.body);
-            res.json(true);
-        }
-        else {
-            res.json(false);
-        }
+            //logic to look through everyones score. absolutes. display the closests match in a module to the html
+       
     });
 
     app.post('/api/clear', function(req, res) {
