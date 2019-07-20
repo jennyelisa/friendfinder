@@ -97,44 +97,44 @@
 </html>
 
 <script type="text/javascript">
-document.getElementById('submit').addEventListener('click', function(){
-    var userAnswers = [];
-    var selected = document.getElementsByClassName('question-answers')
-    for(var i=0; i<selected.length; i++){
-        var selectedIndex = selected[i].selectedIndex;
-        userAnswers.push(selectedIndex)
-    }
-    console.log(userAnswers)
-})
+// document.getElementById('submit').addEventListener('click', function(){
+//     var userAnswers = [];
+//     var selected = document.getElementsByClassName('question-answers')
+//     for(var i=0; i<selected.length; i++){
+//         var selectedIndex = selected[i].selectedIndex;
+//         userAnswers.push(selectedIndex)
+//     }
+//     console.log(userAnswers)
+// })
 
-    // $(".submit").on("click", function(event) {
-    //   event.preventDefault();
+    $(".submit").on("click", function(event) {
+      event.preventDefault();
   
-    //   var surveryAnswers = {
-    //     userName: $("#user-name").val().trim(),
-    //     photo: $("#img-link").val().trim(),
+      var surveryAnswers = {
+        userName: $("#user-name").val().trim(),
+        photo: $("#img-link").val().trim(),
        
-    //   };
+      };
   
-    //   console.log(surveryAnswers);
+      console.log(surveryAnswers);
   
-    //   $.post("/api/friends", surveryAnswers,
-    //     function(data) {
+      $.post("/api/friends", surveryAnswers,
+        function(data) {
   
-    //       if (data) {
-    //         alert("Yay!");
-    //       }
+          if (data) {
+            alert("Yay!");
+          }
   
-    //       else {
-    //         alert("Select your answers.");
-    //       }
+          else {
+            alert("Select your answers.");
+          }
   
-    //       $("#user-name").val("");
-    //       $("#img-link").val("");
+          $("#user-name").val("");
+          $("#img-link").val("");
          
   
-    //     });
+        });
   
-    // });
+    });
   
   </script>
