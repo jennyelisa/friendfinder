@@ -1,0 +1,25 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Build a compatibility-based \"FriendFinder\" application. This application will take in results from users' surveys and compare their answers with those of others users. Then the app will then display the name and picture of the user with the best overall match. Using Express and deployed with Heroku.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennyelisa/friendfinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jennyelisa/friendfinder/issues"
+  },
+  "homepage": "https://github.com/jennyelisa/friendfinder#readme"
+}

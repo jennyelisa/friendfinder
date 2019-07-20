@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder </title>
+
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <h2>Survey Questions</h2>
+    </div>
+
+    <div class="input-user">
+        <h4>About You</h4>
+        <p>NAME (required)</p><input type="text" id="user-name">
+        <p>Link to Photo Image (required)</p><input type="text" id="img-link">
+    </div>
+
+    <div class="card questions">
+        <div class="card-body">
+            <h4>Question 1</h4>
+            <p>Your mind is always buzzing with unexplored ideas.</p>
+            <fieldset class="questions-answers">
+                1 (Strongly Disagree)<input type="radio">
+                2<input type="radio">
+                3<input type="radio">
+                4<input type="radio">
+                5 (Strongly Agree)<input type="radio">
+            </fieldset>
+        </div>
+    
+    <div class="card questions">
+        <div class="card-body">
+            <h4>Question 2</h4>
+            <p>Generally speaking, you rely more on your experience than your imagination.</p>
+            <fieldset class="questions-answers">
+                1 (Strongly Disagree)<input type="radio">
+                2<input type="radio">
+                3<input type="radio">
+                4<input type="radio">
+                5 (Strongly Agree)<input type="radio">
+            </fieldset>
+        </div>
+    </div>
+    <div class="card questions">
+        <div class="card-body">
+            <h4>Question 3</h4>
+            <p>You find it easy to stay relaxed and focused even when there is some presure. </p>
+            <fieldset class="questions-answers">
+                1 (Strongly Disagree)<input type="radio">
+                2<input type="radio">
+                3<input type="radio">
+                4<input type="radio">
+                5 (Strongly Agree)<input type="radio">
+            </fieldset>
+        </div>
+    </div>
+    <div class="card questions">
+        <div class="card-body">
+            <h4>Question 4</h4>
+            <p>You rarley do something just out of sheer curiosity.</p>
+            <fieldset class="questions-answers">
+                1 (Strongly Disagree)<input type="radio">
+                2<input type="radio">
+                3<input type="radio">
+                4<input type="radio">
+                5 (Strongly Agree)<input type="radio">
+            </fieldset>
+        </div>
+    </div>
+    <div class="card questions">
+        <div class="card-body">
+            <h4>Question 5</h4>
+            <p>People can rarely upset you.</p>
+            <fieldset class="questions-answers">
+                1 (Strongly Disagree)<input type="radio">
+                2<input type="radio">
+                3<input type="radio">
+                4<input type="radio">
+                5 (Strongly Agree)<input type="radio">
+            </fieldset>
+        </div>
+    </div>
+</div>
+
+    <button type="submit" id="submit" class="btn btn-secondary btn-lg btn-block btn-success">Find Your Friend!</button>
+
+</body>
+</html>
+
+<script type="text/javascript">
+document.getElementById('submit').addEventListener('click', function(){
+    var userAnswers = [];
+    var selected = document.getElementsByClassName('question-answers')
+    for(var i=0; i<selected.length; i++){
+        var selectedIndex = selected[i].selectedIndex;
+        userAnswers.push(selectedIndex)
+    }
+    console.log(userAnswers)
+})
+
+    // $(".submit").on("click", function(event) {
+    //   event.preventDefault();
+  
+    //   var surveryAnswers = {
+    //     userName: $("#user-name").val().trim(),
+    //     photo: $("#img-link").val().trim(),
+       
+    //   };
+  
+    //   console.log(surveryAnswers);
+  
+    //   $.post("/api/friends", surveryAnswers,
+    //     function(data) {
+  
+    //       if (data) {
+    //         alert("Yay!");
+    //       }
+  
+    //       else {
+    //         alert("Select your answers.");
+    //       }
+  
+    //       $("#user-name").val("");
+    //       $("#img-link").val("");
+         
+  
+    //     });
+  
+    // });
+  
+  </script>
