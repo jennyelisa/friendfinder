@@ -51,7 +51,7 @@ Give a ⭐️ if this project helped you!
 This project is [ISC](https://github.com/jennyelisa/friendfinder/blob/master/LICENSE) licensed.
 
 ******NOTE******
-I wanted the submit button to make an alert that lets the user know that they successfully answers all questions and filled in all fields. Then i would have liked for to them to have been shown their "new friend". I would have wanted their information to be added to the friendsArray, within the friends list API. 
+I wanted the submit button to make an alert that lets the user know that they successfully answers all questions and filled in all fields. Then i would have liked for to them to have been shown their "new friend" but being able to calculate who they matched the closest to based on their answers. I would have wanted their information to be added to the friendsArray, within the friends list API. 
 
 
 ***
