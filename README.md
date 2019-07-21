@@ -51,9 +51,9 @@ Give a ⭐️ if this project helped you!
 This project is [ISC](https://github.com/jennyelisa/friendfinder/blob/master/LICENSE) licensed.
 
 
-<img src="friendsAPI.png">
-<img src="home.png">
-<img src="survey.png">
+<img src="">
+<img src="">
+<img src="">
 
 
 ***
